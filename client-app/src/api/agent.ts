@@ -4,7 +4,7 @@ import type { PagedList, EventParams, EventDetails } from '../types/event';
 import type { Event } from '../types/event';
 import type { Profile, UserEvent, Follower } from '../types/profile';
 
-axios.defaults.baseURL = 'https://localhost:5001/api';
+axios.defaults.baseURL = '/api';
 axios.defaults.withCredentials = true;
 
 axios.interceptors.request.use(config => {
