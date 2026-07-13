@@ -8,7 +8,7 @@ type EventTab = 'future' | 'past' | 'hosting';
 
 const ProfilePage = observer(() => {
   const { username } = useParams<{ username: string }>();
-  const { profileStore, authStore } = useStore();
+  const { profileStore } = useStore();
   const { profile, events, followings, isLoading, isLoadingEvents, isLoadingFollowings, isSubmitting } = profileStore;
 
   const [sideTab, setSideTab] = useState<SideTab>('about');
